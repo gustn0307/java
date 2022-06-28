@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>0903 실습</title>
+</head>
+
+<body>
+	<script type="text/javascript"> //자동완성 ctrl + space
+		function clicked_btn(){
+			var str=$("input").val()
+			
+			$("#prt").text(str)
+		}
+	</script>
+	
+	<label>문자열을 입력하세요</label>
+	<input type="text" placeholder="java, jsp, HTML"/>
+	<button onclick="clicked_btn()">클릭</button>
+	<p>data 출력</p>
+	<div id="prt"></div>
+</body>
+</html>

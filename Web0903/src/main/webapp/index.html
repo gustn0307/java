@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>타이틀 설정</title>
+	</head>
+	<body>
+		<h1>이클립스 강의</h1>
+		<script type="text/javascript">
+			document.write("Hello world!<br>")
+		
+			var num=123; // auto casting 해준다.
+			document.write(num+"<br>")
+			
+			num=3.14
+			document.write(num+"<br>")
+			
+			num="문자열"
+			document.write(num+"<br>")
+			
+			var n="10"; // 문자열 안의 숫자도 숫자로 인식
+			if(n==10)
+				document.write("같습니다.<br>")
+			else
+				document.write("다릅니다.<br>")
+				
+			var bool=false
+			document.write(bool+"<br>")
+			if(bool=="false") //다름
+				document.write("같습니다.<br>")
+			else
+				document.write("다릅니다.<br>")
+				
+			for(var i=0; i<10; i++)
+			{
+				document.write(i+"<br>")
+			}
+			
+			alert("경고창 스크립트 종료!<br>")
+		</script>
+	</body>
+</html>
