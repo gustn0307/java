@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>프로그래밍 활용 - 강현수</title>
+	<script type="text/javascript">
+		function btnClick() {
+			//var num = document.getElementById("num").value
+			//alert("num: "+num)
+			
+			//여러 개 가능하므로 Elements이고 배열로 접근
+			var nTags = document.getElementsByClassName("n"); 
+			var n=nTags[0].value;
+			alert("n: " + n);
+		}
+		
+		function selChanged(){
+			var val = document.getElementById("pro").value
+			alert(val)
+		}
+	</script>
+</head>
+<body>
+	<h1>프로그래밍 활용 자바 스크립트 테스트</h1>
+	<label>선택</label>
+	<select id="pro" onchange="selChanged()">
+		<option value="java">자바</option>
+		<option value="jsp">jsp</option>
+		<option value="spring">스프링</option>
+		<option value="HTML">HTML</option>
+	</select>
+	<hr>
+	<label>입력</label>
+	<input id="num" class="n" type="text" placeholder="숫자 입력하세요"></input>
+	<!-- 클래스는 여러 개에 할당 가능 -->
+	<button onclick="btnClick()">클릭</button>
+
+</body>
+</html>
